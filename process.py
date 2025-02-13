@@ -43,24 +43,28 @@ def get_feedback(guess, secret):
 
 def treasure_hunt():
     secret_number = generate_secret_number()
-    attempts = 0
+    attempts = 1
+    founded = False
     print("<h2>Treasure Hunt:</h2>")
     print("<ul>")
     print(f"<li>The secret number is {secret_number}.</li>")
     
-    while True:
+    while attempts<5:
         try:
-            guess = int(input(f"Attempt {attempts + 1}: Enter your guess: "))
-            attempts += 1
+            guess = random.randint(1, 100)
             feedback = get_feedback(guess, secret_number)
-            
             print(f"<li>Attempt {attempts}: {guess} ({feedback})</li>")
-            
+            attempts += 1
             if guess == secret_number:
                 print(f"<li>You found the treasure in {attempts} attempts!</li>")
+                founded = True
                 break
         except ValueError:
             print("<li>Please enter a valid number!</li>")
+    if founded == False:
+        guess = secret_number
+        print(f"<li>Attempt {attempts}: {guess} ({feedback})</li>")
+        print(f"<li>You found the treasure in {attempts} attempts!</li>")
     print("</ul>")
 
 treasure_hunt() # Start the game
