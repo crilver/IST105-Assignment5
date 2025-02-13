@@ -30,13 +30,6 @@ print(f"<li>Vowel Count: {num_vowels}.</li>")
 print("</ul>")
 print("<br>")
 
-print("<h2>Treasure Hunt:</h2>")
-print("<ul>")
-print(f"<li>Binary: {binary_form}.</li>")
-print(f"<li>Vowel Count: {num_vowels}.</li>")
-print("</ul>")
-print("<br>")
-
 def generate_secret_number():
     return random.randint(1, 100)
 
