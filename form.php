@@ -7,7 +7,7 @@
         <input type="number" name="a" required>
         <br>
         <label>Text (e.g., name or secret word):</label>
-        <input type="number" name="b" required>
+        <input type="text" name="b" required>
         <br>
         <input type="submit" value="Solve the Puzzle">
     </form>
