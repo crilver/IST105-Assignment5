@@ -63,6 +63,7 @@ def treasure_hunt():
             print("<li>Please enter a valid number!</li>")
     if founded == False:
         guess = secret_number
+        feedback = get_feedback(guess, secret_number)
         print(f"<li>Attempt {attempts}: {guess} ({feedback})</li>")
         print(f"<li>You found the treasure in {attempts} attempts!</li>")
     print("</ul>")
