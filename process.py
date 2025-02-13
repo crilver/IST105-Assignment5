@@ -19,7 +19,7 @@ num_vowels = count_vowels(b)
 
 print("<h2>Number Puzzle:</h2>")
 print("<ul>")
-print(f"<li>The number {a} is {pair}. Its cube is {a**3}.</li>")
+print(f"<li>The number {a} is {pair}. Its cube is {int(a)**3}.</li>")
 print("</ul>")
 print("<br>")
 
