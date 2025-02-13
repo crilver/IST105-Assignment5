@@ -68,4 +68,5 @@ def treasure_hunt():
         print(f"<li>You found the treasure in {attempts} attempts!</li>")
     print("</ul>")
 
-treasure_hunt() # Start the game
+# Start the game
+treasure_hunt()
